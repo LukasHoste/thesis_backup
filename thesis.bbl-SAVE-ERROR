@@ -1,0 +1,656 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global/global}
+    \entry{LEDSpectrumSimulator}{online}{}{}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labeltitlesource}{title}
+      \field{title}{{{LED Spectrum Simulator}} | {{Waveform Lighting}}}
+      \field{urlday}{29}
+      \field{urlmonth}{3}
+      \field{urlyear}{2025}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.waveformlighting.com/led-spectrum-simulator
+      \endverb
+      \verb{url}
+      \verb https://www.waveformlighting.com/led-spectrum-simulator
+      \endverb
+    \endentry
+    \entry{selverianColorCalculatorSoftware2017}{software}{}{}
+      \name{author}{1}{}{%
+        {{hash=669dd7619d16e9b258180f152c672c9f}{%
+           family={Selverian},
+           familyi={S\bibinitperiod},
+           given={John},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{669dd7619d16e9b258180f152c672c9f}
+      \strng{fullhash}{669dd7619d16e9b258180f152c672c9f}
+      \strng{fullhashraw}{669dd7619d16e9b258180f152c672c9f}
+      \strng{bibnamehash}{669dd7619d16e9b258180f152c672c9f}
+      \strng{authorbibnamehash}{669dd7619d16e9b258180f152c672c9f}
+      \strng{authornamehash}{669dd7619d16e9b258180f152c672c9f}
+      \strng{authorfullhash}{669dd7619d16e9b258180f152c672c9f}
+      \strng{authorfullhashraw}{669dd7619d16e9b258180f152c672c9f}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The ColorCalculator software is a tool to help users design lighting solutions. It performs many types of color calculations, including optimization and color mixing. Several generic spectra are included and users can add their own spectra. Several different metrics are vailable (CRI, CQS, TM-30, TLCI). Several different types of plots area available (CIE, L*a*b*, TM-30, TLCI, MacAdams ellipses) all of which can be customized by the user. The effect of filters on a light source can also be calcaulated and the rendering of specific colors can be calculated.}
+      \field{day}{8}
+      \field{month}{11}
+      \field{title}{{{ColorCalculator}} Software}
+      \field{year}{2017}
+      \field{dateera}{ce}
+      \verb{urlraw}
+      \verb https://www.researchgate.net/publication/320930275_ColorCalculator_software
+      \endverb
+      \verb{url}
+      \verb https://www.researchgate.net/publication/320930275_ColorCalculator_software
+      \endverb
+    \endentry
+    \entry{Chromaticiteit2017}{inreference}{}{}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Chromaticiteit is de kwaliteit van een kleur zoals gedefinieerd door zijn kleurtint, verzadiging en helderheid. In de studie van de perceptie van kleur was een van de eerste wiskundig gedefinieerde kleurruimten de CIE 1931 XYZ kleurruimte (ook bekend als de CIE 1931 kleurruimte), gecreëerd door de The International Commission on Illumination (CIE) in 1931. Zie ook Kleurencirkel. Voor een kleurentelevisie zijn de golflengten van de basiskleuren: rood: 610 nm groen: 535 nm blauw: 470 nm}
+      \field{booktitle}{Wikipedia}
+      \field{day}{4}
+      \field{hour}{14}
+      \field{minute}{43}
+      \field{month}{9}
+      \field{second}{52}
+      \field{timezone}{Z}
+      \field{title}{Chromaticiteit}
+      \field{urlday}{29}
+      \field{urlmonth}{3}
+      \field{urlyear}{2025}
+      \field{year}{2017}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://nl.wikipedia.org/w/index.php?title=Chromaticiteit&oldid=49823391
+      \endverb
+      \verb{url}
+      \verb https://nl.wikipedia.org/w/index.php?title=Chromaticiteit&oldid=49823391
+      \endverb
+    \endentry
+    \entry{david2018}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=5e535d12f917881a30f7299427558c89}{%
+           family={al.},
+           familyi={a\bibinitperiod},
+           given={A.\bibnamedelimi David},
+           giveni={A\bibinitperiod\bibinitdelim D\bibinitperiod},
+           prefix={et},
+           prefixi={e\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {120 Wall Street, 17th Floor, New York, NY 10005}%
+      }
+      \list{publisher}{1}{%
+        {IES Illuminating engineering society}%
+      }
+      \strng{namehash}{5e535d12f917881a30f7299427558c89}
+      \strng{fullhash}{5e535d12f917881a30f7299427558c89}
+      \strng{fullhashraw}{5e535d12f917881a30f7299427558c89}
+      \strng{bibnamehash}{5e535d12f917881a30f7299427558c89}
+      \strng{authorbibnamehash}{5e535d12f917881a30f7299427558c89}
+      \strng{authornamehash}{5e535d12f917881a30f7299427558c89}
+      \strng{authorfullhash}{5e535d12f917881a30f7299427558c89}
+      \strng{authorfullhashraw}{5e535d12f917881a30f7299427558c89}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{IES Method for Evaluating Light Source Color Rendition}
+      \field{year}{2018}
+    \endentry
+    \entry{FluorescenceSpectraViewer}{online}{}{}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{labeltitlesource}{title}
+      \field{title}{Fluorescence {{SpectraViewer}}}
+      \field{urlday}{12}
+      \field{urlmonth}{11}
+      \field{urlyear}{2024}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb C:\Users\hoste\Zotero\storage\PUNAW2XK\fluorescence-spectraviewer.html
+      \endverb
+      \verb{urlraw}
+      \verb https://www.thermofisher.com/order/fluorescence-spectraviewer/#!/
+      \endverb
+      \verb{url}
+      \verb https://www.thermofisher.com/order/fluorescence-spectraviewer/#!/
+      \endverb
+    \endentry
+    \entry{smetTutorialLuxPyPython2020}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=0bebc0ec34f0f90ba77abf466dbe825f}{%
+           family={Smet},
+           familyi={S\bibinitperiod},
+           given={Kevin\bibnamedelimb A.\bibnamedelimi G.},
+           giveni={K\bibinitperiod\bibinitdelim A\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Taylor \& Francis}%
+      }
+      \strng{namehash}{0bebc0ec34f0f90ba77abf466dbe825f}
+      \strng{fullhash}{0bebc0ec34f0f90ba77abf466dbe825f}
+      \strng{fullhashraw}{0bebc0ec34f0f90ba77abf466dbe825f}
+      \strng{bibnamehash}{0bebc0ec34f0f90ba77abf466dbe825f}
+      \strng{authorbibnamehash}{0bebc0ec34f0f90ba77abf466dbe825f}
+      \strng{authornamehash}{0bebc0ec34f0f90ba77abf466dbe825f}
+      \strng{authorfullhash}{0bebc0ec34f0f90ba77abf466dbe825f}
+      \strng{authorfullhashraw}{0bebc0ec34f0f90ba77abf466dbe825f}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{LuxPy is a free and open source Python package that supports several common lighting, colorimetric, color appearance, and other color science related calculations that should be useful to researchers and industry professionals. This article describes the installation of the LuxPy toolbox, provides an overview of its basic design and functionality, and gives several examples to demonstrate its basic utilities using a Jupyter notebook. LuxPy is available under a GPLv3 license at www.github.com/ksmet1977/luxpy/ or from the Python Package Index pypi.python.org/pypi/luxpy/.}
+      \field{day}{2}
+      \field{issn}{1550-2724}
+      \field{journaltitle}{LEUKOS}
+      \field{month}{7}
+      \field{number}{3}
+      \field{shorttitle}{Tutorial}
+      \field{title}{Tutorial: {{The LuxPy Python Toolbox}} for {{Lighting}} and {{Color Science}}}
+      \field{urlday}{27}
+      \field{urlmonth}{10}
+      \field{urlyear}{2024}
+      \field{volume}{16}
+      \field{year}{2020}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{179\bibrangedash 201}
+      \range{pages}{23}
+      \verb{doi}
+      \verb 10.1080/15502724.2018.1518717
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1080/15502724.2018.1518717
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1080/15502724.2018.1518717
+      \endverb
+      \keyw{CCT,chromatic adaptation,color appearance,color rendering,color science,colorimetry,duv,hyper-spectral image simulation,lighting,models,photobiological quantities,Python,spectral optimization,toolbox,tristimulus values}
+    \endentry
+    \entry{ohnoSpectralDesignConsiderations2005}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=d30af0a3f79727cf78b88755ea91d1a1}{%
+           family={Ohno},
+           familyi={O\bibinitperiod},
+           given={Yoshi},
+           giveni={Y\bibinitperiod}}}%
+      }
+      \strng{namehash}{d30af0a3f79727cf78b88755ea91d1a1}
+      \strng{fullhash}{d30af0a3f79727cf78b88755ea91d1a1}
+      \strng{fullhashraw}{d30af0a3f79727cf78b88755ea91d1a1}
+      \strng{bibnamehash}{d30af0a3f79727cf78b88755ea91d1a1}
+      \strng{authorbibnamehash}{d30af0a3f79727cf78b88755ea91d1a1}
+      \strng{authornamehash}{d30af0a3f79727cf78b88755ea91d1a1}
+      \strng{authorfullhash}{d30af0a3f79727cf78b88755ea91d1a1}
+      \strng{authorfullhashraw}{d30af0a3f79727cf78b88755ea91d1a1}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{1}
+      \field{issn}{0091-3286}
+      \field{journaltitle}{Optical Engineering}
+      \field{langid}{english}
+      \field{month}{11}
+      \field{number}{11}
+      \field{shortjournal}{Opt. Eng}
+      \field{title}{Spectral Design Considerations for White {{LED}} Color Rendering}
+      \field{urlday}{29}
+      \field{urlmonth}{10}
+      \field{urlyear}{2024}
+      \field{volume}{44}
+      \field{year}{2005}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{111302}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1117/1.2130694
+      \endverb
+      \verb{urlraw}
+      \verb http://opticalengineering.spiedigitallibrary.org/article.aspx?doi=10.1117/1.2130694
+      \endverb
+      \verb{url}
+      \verb http://opticalengineering.spiedigitallibrary.org/article.aspx?doi=10.1117/1.2130694
+      \endverb
+    \endentry
+    \entry{hahnClosingGreenGapb}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=b60e18eb0ef7779cd0cc3c2ed700fdf2}{%
+           family={Hahn},
+           familyi={H\bibinitperiod},
+           given={B},
+           giveni={B\bibinitperiod}}}%
+        {{hash=b70fb9616ca35fd3c22dc5e84760ecc7}{%
+           family={Bauer},
+           familyi={B\bibinitperiod},
+           given={A},
+           giveni={A\bibinitperiod}}}%
+        {{hash=4d8425f2df536fe2799f7a0d04b2a985}{%
+           family={Binder},
+           familyi={B\bibinitperiod},
+           given={M},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{63dce0506886d91508f0835330be0a21}
+      \strng{fullhash}{63dce0506886d91508f0835330be0a21}
+      \strng{fullhashraw}{63dce0506886d91508f0835330be0a21}
+      \strng{bibnamehash}{63dce0506886d91508f0835330be0a21}
+      \strng{authorbibnamehash}{63dce0506886d91508f0835330be0a21}
+      \strng{authornamehash}{63dce0506886d91508f0835330be0a21}
+      \strng{authorfullhash}{63dce0506886d91508f0835330be0a21}
+      \strng{authorfullhashraw}{63dce0506886d91508f0835330be0a21}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{langid}{english}
+      \field{title}{Closing the Green Gap}
+      \verb{urlraw}
+      \verb https://www.energy.gov/sites/prod/files/2019/02/f59/hahn-gap_ssl-rd2019.pdf
+      \endverb
+      \verb{url}
+      \verb https://www.energy.gov/sites/prod/files/2019/02/f59/hahn-gap_ssl-rd2019.pdf
+      \endverb
+    \endentry
+    \entry{ChromaticAdaptation2023}{inreference}{}{}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Chromatic adaptation is the human visual system’s ability to adjust to changes in illumination in order to preserve the appearance of object colors. It is responsible for the stable appearance of object colors despite the wide variation of light which might be reflected from an object and observed by our eyes. A chromatic adaptation transform (CAT) function emulates this important aspect of color perception in color appearance models. An object may be viewed under various conditions. For example, it may be illuminated by sunlight, the light of a fire, or a harsh electric light. In all of these situations, human vision perceives that the object has the same color: a red apple always appears red, whether viewed during the day or at night (if the red apple is illuminated as rods in our eyes do not see red). On the other hand, a camera with no adjustment for light may register the apple as having varying color. This feature of the visual system is called chromatic adaptation, or color constancy; when the correction occurs in a camera it is referred to as white balance. Though the human visual system generally does maintain constant perceived color under different lighting, there are situations where the relative brightness of two different stimuli will appear reversed at different illuminance levels. For example, the bright yellow petals of flowers will appear dark compared to the green leaves in dim light while the opposite is true during the day. This is known as the Purkinje effect, and arises because the peak sensitivity of the human eye shifts toward the blue end of the spectrum at lower light levels.}
+      \field{annotation}{Page Version ID: 1188854965}
+      \field{booktitle}{Wikipedia}
+      \field{day}{8}
+      \field{hour}{2}
+      \field{langid}{english}
+      \field{minute}{33}
+      \field{month}{12}
+      \field{second}{58}
+      \field{timezone}{Z}
+      \field{title}{Chromatic Adaptation}
+      \field{urlday}{12}
+      \field{urlmonth}{11}
+      \field{urlyear}{2024}
+      \field{year}{2023}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \true{nocite}
+      \verb{urlraw}
+      \verb https://en.wikipedia.org/w/index.php?title=Chromatic_adaptation&oldid=1188854965
+      \endverb
+      \verb{url}
+      \verb https://en.wikipedia.org/w/index.php?title=Chromatic_adaptation&oldid=1188854965
+      \endverb
+    \endentry
+    \entry{CIE1931Color2024}{inreference}{}{}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labeltitlesource}{title}
+      \field{abstract}{In 1931 the International Commission on Illumination (CIE) published the CIE 1931 color spaces which define the relationship between the visible spectrum and the visual sensation of specific colors by human color vision. The CIE color spaces are mathematical models that create a "standard observer", which attempts to predict the perception of unique hues of color. These color spaces are essential tools that provide the foundation for measuring color for industry, including inks, dyes, and paints, illumination, color imaging, etc. The CIE color spaces contributed to the development of color television, the creation of instruments for maintaining consistent color in manufacturing processes, and other methods of color management. The initials CIE come from the French name "Commission Internationale de l'éclairage", which has maintained and developed many of the standards in use today relating to colorimetry. The CIE color spaces were created using data from a series of experiments, where human test subjects adjusted red, green, and blue primary colors to find a visual match to a second, pure color. The original experiments were conducted in the mid 1920s by William David Wright using ten observers and John Guild using seven observers. The experimental results were combined, creating the CIE RGB color space. The CIE XYZ color space was derived from CIE RGB in an effort to simplify the math. The CIE 1931 XYZ color space is still widely used, even though it is not perceptually uniform in relation to human vision. In 1976 the CIE published the CIELUV and CIELAB color spaces, which are derived from XYZ, and are intended to provide more uniform predictions relative to human perception.}
+      \field{annotation}{Page Version ID: 1253344045}
+      \field{booktitle}{Wikipedia}
+      \field{day}{25}
+      \field{hour}{13}
+      \field{langid}{english}
+      \field{minute}{50}
+      \field{month}{10}
+      \field{second}{1}
+      \field{timezone}{Z}
+      \field{title}{{{CIE}} 1931 Color Space}
+      \field{urlday}{30}
+      \field{urlmonth}{10}
+      \field{urlyear}{2024}
+      \field{year}{2024}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \true{nocite}
+      \verb{urlraw}
+      \verb https://en.wikipedia.org/w/index.php?title=CIE_1931_color_space&oldid=1253344045#Color_matching_functions
+      \endverb
+      \verb{url}
+      \verb https://en.wikipedia.org/w/index.php?title=CIE_1931_color_space&oldid=1253344045#Color_matching_functions
+      \endverb
+    \endentry
+    \entry{ColorRenderingLight}{online}{}{}
+      \list{organization}{1}{%
+        {DigiKey}%
+      }
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The National Institute of Standards and Technology is proposing a Color Quality Scale that is designed to address shortcomings of the Color Rendering Index with regard to solid-state lighting}
+      \field{langid}{polish}
+      \field{title}{Color Rendering of Light Sources}
+      \field{urlday}{12}
+      \field{urlmonth}{11}
+      \field{urlyear}{2024}
+      \field{urldateera}{ce}
+      \true{nocite}
+      \verb{urlraw}
+      \verb https://www.digikey.pl/pl/articles/color-rendering-of-light-sources
+      \endverb
+      \verb{url}
+      \verb https://www.digikey.pl/pl/articles/color-rendering-of-light-sources
+      \endverb
+    \endentry
+    \entry{ExternalQuantumEfficiency}{online}{}{}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labeltitlesource}{title}
+      \field{title}{External {{Quantum Efficiency}} - an Overview | {{ScienceDirect Topics}}}
+      \field{urlday}{27}
+      \field{urlmonth}{10}
+      \field{urlyear}{2024}
+      \field{urldateera}{ce}
+      \true{nocite}
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/topics/engineering/external-quantum-efficiency
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/topics/engineering/external-quantum-efficiency
+      \endverb
+    \endentry
+    \entry{saleemGamificationApplicationsElearning2022}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=7f4036c8d58e2a8345b2facdf1da8a8f}{%
+           family={Saleem},
+           familyi={S\bibinitperiod},
+           given={Awaz\bibnamedelima Naaman},
+           giveni={A\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+        {{hash=9defaee994a51c1f61b2b0d0a0f0521f}{%
+           family={Noori},
+           familyi={N\bibinitperiod},
+           given={Narmin\bibnamedelima Mohammed},
+           giveni={N\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=4a2270a1ed5c2952941dfc3a1c5cf52b}{%
+           family={Ozdamli},
+           familyi={O\bibinitperiod},
+           given={Fezile},
+           giveni={F\bibinitperiod}}}%
+      }
+      \strng{namehash}{1210c5909ca124c95e5582fc98672b2e}
+      \strng{fullhash}{1210c5909ca124c95e5582fc98672b2e}
+      \strng{fullhashraw}{1210c5909ca124c95e5582fc98672b2e}
+      \strng{bibnamehash}{1210c5909ca124c95e5582fc98672b2e}
+      \strng{authorbibnamehash}{1210c5909ca124c95e5582fc98672b2e}
+      \strng{authornamehash}{1210c5909ca124c95e5582fc98672b2e}
+      \strng{authorfullhash}{1210c5909ca124c95e5582fc98672b2e}
+      \strng{authorfullhashraw}{1210c5909ca124c95e5582fc98672b2e}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{In recent years, there has been a lot of attention given to the trend of including game elements into non-gaming facilities. The usage of gamification in education is a massive benefit for motivation, user interaction, and social effects. The gamified elements such as points, badge, feedbacks, level, rewards, challenges, etc. have been used in e-learning. A systematic review of gamification in online education has not been found when the relevant literature examined. Therefore, this study aims to research the current literature using gamification and online education and highlight the reported benefits and challenges of gamification applications in online education. The present research followed the literature review method. The current study employed a qualitative approach for collected data. Thus, the term "gamification" was used as the primary research keyword. The results show that gamification has increasingly been accepted as a useful learning tool to generate more engaging educational environments. Additionally, elements support and motivate students to participate in a gamification system. The study showed that the most common gamification elements used in e-learning and have a powerful effect on the students are points, leaderboards, badge, and level. This study is thought to contribute significantly to studies on the use of gamification applications in online education. It reinforces previous studies and identifies many useful study topics that can be explored to advance the field. From these results, suggestions on gamification applications in e-learning for further research are given.}
+      \field{day}{1}
+      \field{issn}{2211-1670}
+      \field{journaltitle}{Technology, Knowledge and Learning}
+      \field{langid}{english}
+      \field{month}{3}
+      \field{number}{1}
+      \field{shortjournal}{Tech Know Learn}
+      \field{shorttitle}{Gamification {{Applications}} in {{E-learning}}}
+      \field{title}{Gamification {{Applications}} in {{E-learning}}: {{A Literature Review}}}
+      \field{urlday}{13}
+      \field{urlmonth}{3}
+      \field{urlyear}{2025}
+      \field{volume}{27}
+      \field{year}{2022}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \true{nocite}
+      \field{pages}{139\bibrangedash 159}
+      \range{pages}{21}
+      \verb{doi}
+      \verb 10.1007/s10758-020-09487-x
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1007/s10758-020-09487-x
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1007/s10758-020-09487-x
+      \endverb
+      \keyw{Advantages of gamification,Challenges of gamification,Digital Education and Educational Technology,E-learning,Gamification,Gamification elements}
+    \endentry
+    \entry{PhosphorModelingLightTools}{article}{}{}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labeltitlesource}{title}
+      \field{langid}{english}
+      \field{title}{Phosphor {{Modeling}} in {{LightTools}}}
+      \true{nocite}
+      \verb{file}
+      \verb C:\Users\hoste\Zotero\storage\F4AW6L4Q\Phosphor Modeling in LightTools.pdf
+      \endverb
+    \endentry
+    \entry{ReadFrontiersEngineering}{book}{}{}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{Read chapter Light-Emitting Diode Technology for Solid-State Lighting--Mike Krames: In 1995, the National Academy of Engineering initiated the Frontiers o...}
+      \field{langid}{english}
+      \field{shorttitle}{Read "{{Frontiers}} of {{Engineering}}}
+      \field{title}{Read "{{Frontiers}} of {{Engineering}}: {{Reports}} on {{Leading-Edge Engineering}} from the 2009 {{Symposium}}" at {{NAP}}.Edu}
+      \field{urlday}{13}
+      \field{urlmonth}{10}
+      \field{urlyear}{2024}
+      \field{urldateera}{ce}
+      \true{nocite}
+      \verb{doi}
+      \verb 10.17226/12821
+      \endverb
+      \verb{urlraw}
+      \verb https://nap.nationalacademies.org/read/12821/chapter/12
+      \endverb
+      \verb{url}
+      \verb https://nap.nationalacademies.org/read/12821/chapter/12
+      \endverb
+    \endentry
+    \entry{zhuSolidStateLightingBased2016}{incollection}{}{}
+      \name{author}{2}{}{%
+        {{hash=dd86b047f9a07e192d871fe22e8793e7}{%
+           family={Zhu},
+           familyi={Z\bibinitperiod},
+           given={Dandan},
+           giveni={D\bibinitperiod}}}%
+        {{hash=76430f4b8b5c7d4bc2c4d07d01e0a3e8}{%
+           family={Humphreys},
+           familyi={H\bibinitperiod},
+           given={Colin\bibnamedelima J.},
+           giveni={C\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \name{editor}{3}{}{%
+        {{hash=fff81f9de4609930fd140a12428b9b21}{%
+           family={Al-Amri},
+           familyi={A\bibinithyphendelim A\bibinitperiod},
+           given={Mohammad\bibnamedelima D.},
+           giveni={M\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+        {{hash=b5dec094f2bdf2d6a740c7669ddc782d}{%
+           family={El-Gomati},
+           familyi={E\bibinithyphendelim G\bibinitperiod},
+           given={Mohamed},
+           giveni={M\bibinitperiod}}}%
+        {{hash=74c7a1577b927dce66bead2c7cf804b9}{%
+           family={Zubairy},
+           familyi={Z\bibinitperiod},
+           given={M.\bibnamedelimi Suhail},
+           giveni={M\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Cham}%
+      }
+      \list{publisher}{1}{%
+        {Springer International Publishing}%
+      }
+      \strng{namehash}{43fa95a0e98c5770c2729cacea1bf9f7}
+      \strng{fullhash}{43fa95a0e98c5770c2729cacea1bf9f7}
+      \strng{fullhashraw}{43fa95a0e98c5770c2729cacea1bf9f7}
+      \strng{bibnamehash}{43fa95a0e98c5770c2729cacea1bf9f7}
+      \strng{authorbibnamehash}{43fa95a0e98c5770c2729cacea1bf9f7}
+      \strng{authornamehash}{43fa95a0e98c5770c2729cacea1bf9f7}
+      \strng{authorfullhash}{43fa95a0e98c5770c2729cacea1bf9f7}
+      \strng{authorfullhashraw}{43fa95a0e98c5770c2729cacea1bf9f7}
+      \strng{editorbibnamehash}{bd384012ef2c7ea00017090cfd93941f}
+      \strng{editornamehash}{bd384012ef2c7ea00017090cfd93941f}
+      \strng{editorfullhash}{bd384012ef2c7ea00017090cfd93941f}
+      \strng{editorfullhashraw}{bd384012ef2c7ea00017090cfd93941f}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Solid-state lighting is believed to be the ultimate light source and is in the process of profoundly changing the way that humans generate and control light for various applications. Differing from conventional light sources that use tungsten filament, plasma, or gases to generate light, solid-state lighting is based on organic or inorganic light emitting diodes (LEDs), and has the potential to generate light with almost 100\,\% efficiency. LED lighting has long lifetime and is environmentally friendly with no toxic mercury contained. Beyond energy saving, LEDs are light sources that can be tuned and controlled to a great degree; for instance, the emission spectrum could be optimised for our health and wellbeing. In the future, we could expect LED-based solid-state lighting to combine with communication technology to become an integrated part of a smart home. In this chapter, we will focus on the most important component of white LEDs—nitride materials—and review the historical development of nitride-based LEDs, the research challenges involved, their performance and applications.}
+      \field{booktitle}{Optics in {{Our Time}}}
+      \field{isbn}{978-3-319-31903-2}
+      \field{langid}{english}
+      \field{title}{Solid-{{State Lighting Based}} on {{Light Emitting Diode Technology}}}
+      \field{urlday}{15}
+      \field{urlmonth}{10}
+      \field{urlyear}{2024}
+      \field{year}{2016}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \true{nocite}
+      \field{pages}{87\bibrangedash 118}
+      \range{pages}{32}
+      \verb{doi}
+      \verb 10.1007/978-3-319-31903-2_5
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1007/978-3-319-31903-2_5
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1007/978-3-319-31903-2_5
+      \endverb
+      \keyw{Internal Quantum Efficiency,Lead Lighting,Metal Organic Vapour Phase Epitaxy,Visible Light Communication,White Light Source}
+    \endentry
+    \entry{rootPrincipleBasicCalculation}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=63a9f0ea7bb98050796b649e85481845}{%
+           family={{root}},
+           familyi={r\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {LISUN}%
+      }
+      \strng{namehash}{63a9f0ea7bb98050796b649e85481845}
+      \strng{fullhash}{63a9f0ea7bb98050796b649e85481845}
+      \strng{fullhashraw}{63a9f0ea7bb98050796b649e85481845}
+      \strng{bibnamehash}{63a9f0ea7bb98050796b649e85481845}
+      \strng{authorbibnamehash}{63a9f0ea7bb98050796b649e85481845}
+      \strng{authornamehash}{63a9f0ea7bb98050796b649e85481845}
+      \strng{authorfullhash}{63a9f0ea7bb98050796b649e85481845}
+      \strng{authorfullhashraw}{63a9f0ea7bb98050796b649e85481845}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{There is no doubt that the color rendering index is a very important quantity to measure the color characteristics of the light source. At a time when computers are highly popular, the calculation of the color rendering index has been written into the computer program along with the spectrometer, which can be read directly, but it is still necessary to understand the calculation process of the color rendering index.}
+      \field{langid}{english}
+      \field{title}{The Principle and Basic Calculation of {{CRI}}}
+      \field{urlday}{12}
+      \field{urlmonth}{11}
+      \field{urlyear}{2024}
+      \field{urldateera}{ce}
+      \true{nocite}
+      \verb{urlraw}
+      \verb https://www.lisungroup.com/news/technology-news/the-principle-and-basic-calculation-of-cri.html
+      \endverb
+      \verb{url}
+      \verb https://www.lisungroup.com/news/technology-news/the-principle-and-basic-calculation-of-cri.html
+      \endverb
+    \endentry
+    \entry{krukowskiVue3I18n2023}{online}{}{}
+      \name{author}{1}{}{%
+        {{hash=7624f37c962be6651d3496203793018a}{%
+           family={Krukowski},
+           familyi={K\bibinitperiod},
+           given={Ilya},
+           giveni={I\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {Lokalise Blog}%
+      }
+      \strng{namehash}{7624f37c962be6651d3496203793018a}
+      \strng{fullhash}{7624f37c962be6651d3496203793018a}
+      \strng{fullhashraw}{7624f37c962be6651d3496203793018a}
+      \strng{bibnamehash}{7624f37c962be6651d3496203793018a}
+      \strng{authorbibnamehash}{7624f37c962be6651d3496203793018a}
+      \strng{authornamehash}{7624f37c962be6651d3496203793018a}
+      \strng{authorfullhash}{7624f37c962be6651d3496203793018a}
+      \strng{authorfullhashraw}{7624f37c962be6651d3496203793018a}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{Vue i18n is a key process needed to localize your Vue 3 apps and websites. Learn how to set up a Vue app with i18n support in this guide.}
+      \field{day}{18}
+      \field{hour}{18}
+      \field{langid}{american}
+      \field{minute}{28}
+      \field{month}{1}
+      \field{second}{21}
+      \field{shorttitle}{Vue 3 I18n}
+      \field{timezone}{Z}
+      \field{title}{Vue 3 I18n: {{Building}} a Multi-Language App with Locale Switcher}
+      \field{urlday}{22}
+      \field{urlmonth}{10}
+      \field{urlyear}{2024}
+      \field{year}{2023}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \true{nocite}
+      \verb{urlraw}
+      \verb https://lokalise.com/blog/vue-i18n/
+      \endverb
+      \verb{url}
+      \verb https://lokalise.com/blog/vue-i18n/
+      \endverb
+    \endentry
+    \entry{WhatCRIR9}{online}{}{}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labeltitlesource}{title}
+      \field{title}{What Is {{CRI R9}} and {{Why}} Is It {{Important}}? | {{Waveform Lighting}}}
+      \field{urlday}{8}
+      \field{urlmonth}{11}
+      \field{urlyear}{2024}
+      \field{urldateera}{ce}
+      \true{nocite}
+      \verb{urlraw}
+      \verb https://www.waveformlighting.com/tech/what-is-cri-r9-and-why-is-it-important
+      \endverb
+      \verb{url}
+      \verb https://www.waveformlighting.com/tech/what-is-cri-r9-and-why-is-it-important
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

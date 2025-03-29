@@ -1,0 +1,302 @@
+\chapter{Relevante Concepten}\label{ch:concepten}
+
+In dit hoofdstuk leggen we alle concepten uit die nodig zijn om de volledige functionaliteit van de webapp te begrijpen.
+
+Dit hoofdstuk is hoofdzakelijk gebaseerd op ~\cite{LightingTechnologyHandbook,InteriorLightingHandbook,Light-EmittingDiodes,FundamentalsofSolidStateLighting}
+
+\section{Spectral power distribution}{\label{sec:spectral-power-distribution}}
+
+De \gls{spd} is een essentieel concept voor het gebruik van de app en de verschillende berekeningen die hierin worden uitgevoerd. Het vormt de basis voor alle andere berekeningen. Bovendien maakt de \gls{spd} het eenvoudig om experimentele aanpassingen snel te visualiseren. Aan de hand van de \gls{spd} kunnen we per golflengte zien hoeveel optische straling wordt uitgezonden. Het wordt gedefinieerd als de hoeveelheid optische straling die door een bron wordt uitgezonden binnen een smalle band $\Delta\lambda$, gecentreerd rond een specifieke golflengte $\lambda$. Door een grafiek van de spectral power distribution te maken, kunnen we bijvoorbeeld zien bij welke golflengte een \gls{led} de grootste optische straling heeft en welk effect het toevoegen van luminescente materialen heeft.
+
+\begin{figure}[H]
+    \centering
+    \resizebox{0.7\textwidth}{!}{\input{figs/spd}}
+    \caption{Voorbeeld spectral power distribution}
+    \label{fig:VBSPD}
+\end{figure}
+
+\section{External quantum efficiency}{\label{sec:external-quantum-efficiency}}
+
+Het volgende belangrijke concept is de \gls{eqe}. Dit begrip geeft aan hoeveel fotonen er voor de inkomende elektronen de \gls{led} verlaten. Dit is cruciaal bij het berekenen van de spectral power distribution van een \gls{led}. Afhankelijk van de centrale golflengte kan de external quantum efficiency namelijk sterk vari\"eren. Dit zorgt ervoor dat de hoeveelheid stralingsstroom voor bepaalde \gls{led}s een stuk kleiner is, doordat minder fotonen de \gls{led} kunnen verlaten. Zo hebben bijvoorbeeld groene \gls{led}s een veel lagere effici\"entie dan andere \gls{led}s (the green gap ~\cite{ExternalQuantumEfficiency,hahnClosingGreenGapb,FrontiersEQE,zhuSolidStateLightingBased2016EQE}), wat ervoor zorgt dat deze \gls{led}s meer vermogen nodig hebben. Het effect van de \gls{eqe} is rechtstreeks af te lezen in de spectral power distribution. Zo zal een groene \gls{led} met hetzelfde ingangsvermogen als een blauwe \gls{led} minder licht produceren.
+
+\section{Chromaticiteit}\label{sec:chromaticiteit}
+
+Door de verschillende \gls{spd}s van lichtbronnen ontstaat voor de mens een bepaalde kleur. Om te bepalen met welke kleur een \gls{spd} overeenkomt, maken we gebruik van een chromaticiteitsdiagram. Dit diagram helpt ons de kleur te visualiseren die wordt waargenomen op basis van de \gls{spd} van een lichtbron. Om op het chromaticiteitsdiagram tot een kleur te komen, moeten we eerst gebruik maken van de $\bar{x}(\lambda), \, \bar{y}(\lambda), \, \text{en} \, \bar{z}(\lambda)$ \gls{cmf} en de X, Y en Z tristimuluswaarden.
+
+De \gls{cmf} (colour matching functions) zijn numerieke waarden die de chromatische respons van de waarnemer beschrijven. Chromatische respons betekent de manier waarop het menselijk oog verschillende golflengten van licht (kleuren) waarneemt. Het menselijk oog is namelijk gevoelig voor verschillende golflengtes, en de \gls{cmf} geven aan hoe sterk het oog reageert op licht bij verschillende golflengtes. Dit zijn als het ware de "gevoeligheidsfuncties" voor de verschillende kleuren die we kunnen waarnemen.
+
+De X, Y en Z tristimuluswaarden zijn net zoals de RGB-waarden (rood, groen, blauw) een manier om een kleur voor te stellen, maar ze zijn gebaseerd op hoe een gemiddeld menselijk oog reageert op licht. De tristimuluswaarden X, Y en Z geven een gestandaardiseerde manier om de kleur van een lichtbron te berekenen op basis van de waarneming van de mens.
+
+De waarnemer die we gebruiken om de \gls{cmf} te berekenen, is gebaseerd op de chromatische respons van een gemiddelde mens, die een respons heeft binnen een boog van twee graden van het gezichtsveld. Dit model wordt gebruikt omdat het menselijk zicht niet overal in het gezichtsveld even gevoelig is voor kleur. De \gls{cmf}s kunnen we dan zien als de spectrale "intensiteit" curves van drie lichtdetectoren, die samen de CIE-tristimuluswaarden X, Y en Z opleveren.
+
+Aan de hand van de \gls{cmf} en de \gls{spd} van de te analyseren lichtbron kunnen we de X, Y en Z waarden berekenen op de volgende manier ~\cite{LightingTechnologyHandbook, CIE1931ColorSpace2024}:
+
+\begin{align*}
+X &= k.\int_{\lambda} \bar{x}(\lambda) P(\lambda) \, d\lambda \\
+Y &= k.\int_{\lambda} \bar{y}(\lambda) P(\lambda) \, d\lambda \\
+Z &= k.\int_{\lambda} \bar{z}(\lambda) P(\lambda) \, d\lambda
+\end{align*}
+
+Met $P(\lambda)$ de \gls{spd} van de lichtbron en $k$ een normalisatieconstante.
+
+Aan de hand van deze tristimulus waarden kunnen vervolgens de chromaticiteitsco\"ordinaten berekend worden.
+
+\begin{align*}
+x &= \frac{X}{X + Y + Z} \\
+y &= \frac{Y}{X + Y + Z} \\
+z &= \frac{Z}{X + Y + Z}
+\end{align*}
+
+Conventioneel worden de x- en y-co\"ordinaten in het chromaticiteitsdiagram gebruikt om een punt of kleur aan te duiden. Het is belangrijk om te begrijpen dat deze co\"ordinaten niet bedoeld zijn om een specifieke kleur vast te leggen, maar om de kleur te situeren. Dit komt doordat het chromaticiteitsdiagram enkel rekening houdt met de tint (hue) en verzadiging (saturation), maar niet met de lichtheid. Toch kunnen de chromaticiteitsco\"ordinaten verder worden gebruikt om de \gls{cct} en \gls{cri} waarden te berekenen.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.6\linewidth]{figs/PlanckianLocus.png}
+    \caption{Chromaticiteitsdiagram ~\cite{Chromaticiteit2017}}%
+    \label{fig:chromaticiteitsdiagram}
+\end{figure}
+
+\subsection{Correlated color temperature}
+
+Een andere belangrijke waarde bij de chromaticiteit is de \gls{cct}. De \gls{cct} is een maat voor de kleur van een lichtbron aan de hand van een temperatuur. Deze maat is gebaseerd op temperaturen bij ''blackbody radiators''. Een ''blackbody radiator'' is een object dat alle invallende straling absorbeert en vervolgens weer uitzendt.
+
+Bij een ''blackbody radiator'' is de kleur volledig afhankelijk van de temperatuur. Hierdoor kunnen we de temperatuur van een ''blackbody radiator'' gebruiken om zijn kleur te beschrijven. Zo bevindt een witte ''blackbody radiator'' zich bijvoorbeeld rond 5000 K.
+
+We kunnen de ''Color temperature'' linken met de chromaticiteit aan de hand van de curve in \cref{fig:chromaticiteitsdiagram}. Deze curve wordt de ''blackbody locus'' of blackbody curve genoemd en stelt de kleur voor van ''blackbody radiators'' bij verschillende temperaturen.
+
+Wanneer de chromaticiteit van een lichtbron op de ''blackbody locus'' ligt, kan de ''Color temperature'' gegeven worden. Ligt de chromaticiteit van een lichtbron echter niet op de ''blackbody locus'', dan kan deze waarde niet worden gebruikt. In dit geval wordt de \gls{cct} waarde gebruikt, die de temperatuur van een ''blackbody radiator'' weergeeft die ongeveer dezelfde kleur heeft als de lichtbron.
+
+\section{Color rendering index}
+
+De \gls{cri} is een maat voor hoe goed een lichtbron kleuren kan weergeven ~\cite{ColorRenderingLight,LightingTechnologyHandbook}. Het is een getal tussen 0 en 100, waarbij 100 de beste kleurweergave voorstelt. De \gls{cri} wordt berekend aan de hand van de kleurweergave van 8 of meer testkleuren.
+
+De \gls{cri} waarde wordt bepaald door de kleursverandering van een testkleur onder de lichtbron te vergelijken met de kleursverandering van de testkleur onder een referentie lichtbron. Van elke van deze 8 of meer kleuren wordt de $R_i$ waarde berekend, wat de kleurverandering van de testkleur onder de lichtbron aangeeft in vergelijking met de referentiebron. Aan de hand van deze $R_i$ waarden wordt een gemiddelde berekend, de \gls{cri} waarde. 
+
+In de standaardmethode is de referentiebron een black body radiator wanneer de \gls{cct} van de lichtbron kleiner is dan 5000K. Is de \gls{cct} groter dan 5000K, dan wordt een mathematisch model van daglicht gebruikt als referentiebron. Naast de acht standaardkleuren kunnen er ook zes extra kleuren optioneel worden toegevoegd. Deze kleuren verbeteren de nauwkeurigheid van de \gls{cri} waarde. 
+
+Van deze extra kleuren is $R_9$ een zeer belangrijke ~\cite{WhatCRIR9}. Lichtbronnen met een lage $R_9$ waarde worden namelijk vaak als onaangenaam ervaren. Dit komt doordat de testkleur voor $R_9$ een rode kleur is, die belangrijk is voor de weergave van bijvoorbeeld huidskleur. Veel lichtbronnen stralen minder licht uit bij de rode golflengtes, waardoor de $R_9$ waarde vaak laag is. Dit is echter niet zichtbaar in de standaard \gls{cri} waarde.
+
+De \gls{cri} waarde is belangrijk voor het beoordelen van de kwaliteit van een lichtbron, maar het is niet altijd de beste maatstaf. De \gls{cri} is niet in staat om lichtbronnen goed te rangschikken, vooral niet wanneer \gls{led}s worden gebruikt. Dit komt door de dunne emissiespectra van \gls{led}s, waarin het licht wordt gemengd. Voor deze reden worden nog andere methodes gebruikt/ontwikkeld om de kleurweergave van lichtbronnen te beoordelen. Het is belangrijk dat deze methodes worden gebruikt als een hulp bij het beoordelen van de kwaliteit van een lichtbron en niet als enige maatstaf.
+
+\subsection{Berekening CRI\texorpdfstring{~\cite{rootPrincipleBasicCalculation,ColorRenderingIndexWiki}}{}}
+
+In de standaardberekening van de \gls{cri} waarde wordt de ''color rendering'' van de testbron vergeleken met die van een referentiebron. Zoals eerder vermeld, wordt een black body radiator als referentiebron gebruikt wanneer de \gls{cct} van de testbron kleiner is dan 5000K. Is de \gls{cct} groter dan 5000K, dan wordt een mathematisch model van daglicht gebruikt.
+
+De berekening begint met het bepalen van de x,y-co\"ordinaten van de testbron. Deze co\"ordinaten worden omgezet naar u,v-co\"ordinaten. De u,v-co\"ordinaten zijn een andere manier om kleuren te representeren en worden vaak gebruikt in kleurwetenschap vanwege hun perceptuele uniformiteit. De u,v-co\"ordinaten worden vervolgens gebruikt om de \gls{cct} te berekenen door het dichtstbijzijnde punt op de Planckian locus te vinden. Aan de hand van deze \gls{cct} waarde wordt de referentiebron bepaald.
+
+Daarna wordt de afstand van de testbron tot de Planckian locus (DC) berekend. Dit geeft aan of het resultaat relevant is. De \gls{cri} waarde is namelijk enkel gedefinieerd voor lichtbronnen die ongeveer wit zijn.
+
+% formula of DC
+\begin{align*}
+    DC = \sqrt{(u - u_{\text{Planckian}})^2 + (v - v_{\text{Planckian}})^2}
+\end{align*}
+
+Als de waarde van DC boven $5.4 \times 10^{-3}$ ligt, is de \gls{cri} waarde niet relevant.
+
+Vervolgens worden de testsamples belicht met zowel de testbron als de referentiebron. Aan de hand hiervan worden de u,v-co\"ordinaten van het licht dat door de testsamples gereflecteerd wordt, bepaald. Daarna wordt op elk van deze samples een von Kries-transformatie toegepast. Dit is een transformatie die wordt uitgevoerd om rekening te houden met ''chromatic adaptation''.
+
+''Chromatic adaptation'' is het fenomeen waarbij de gevoeligheid van de ogen verandert om zich aan te passen aan veranderingen in de lichtbron ~\cite{ChromaticAdaptation2023,LightingTechnologyHandbook}. Dit fenomeen zorgt ervoor dat een object onder verschillende belichtingen grotendeels hetzelfde blijft. Zo zal een appel zelfs onder verschillende lichtbronnen nog steeds rood lijken.
+
+De von Kries-transformatie wordt uitgevoerd aan de hand van de volgende formules:
+
+\begin{align}
+    c &= \frac{4.0 - u - 10.0v}{v} \\
+    d &= \frac{1.708v - 1.481u + 0.404}{v}\\
+    u_{c,i} &= \frac{10.872 + 0.404\left(\frac{c_r}{c_t}\right)c_{t,i} - 4\left(\frac{d_r}{d_t}\right)d_{t,i}}{16.518 + 1.481\left(\frac{c_r}{c_t}\right)c_{t,i} - \left(\frac{d_r}{d_t}\right)d_{t,i}} \\
+    v_{c,i} &= \frac{5.520}{16.518 + 1.481\left(\frac{c_r}{c_t}\right)c_{t,i} - \left(\frac{d_r}{d_t}\right)d_{t,i}}
+\end{align}
+
+Nu kan voor elk sample de euclidische afstand tussen de co\"ordinaten van de testbron en de referentiebron berekend worden. Ten slotte kan de \gls{cri} waarde berekend worden aan de hand van de volgende formule:
+
+\begin{align}
+    R_i = 100 - 4.6\Delta E_i
+\end{align}
+
+Met $\Delta E_i$ de euclidische afstand tussen de co\"ordinaten van de testbron en de referentiebron voor de $i$-de sample.
+
+Door het nemen van het gemiddelde van de $R_i$ waarden kan de \gls{cri} waarde berekend worden. Het is echter natuurlijk ook belangrijk deze waarden apart te bekijken.
+
+\section[tm30]{tm30\texorpdfstring{\footnote{Gebaseerd op ~\cite{david2018}.}}{}}
+
+
+Tm30 is een methode voor het evalueren van lichtbronnen die gebruik maakt van een statistische aanpak. Ze stelt zowel algemene eigenschappen (zoals de gamut area) als hue-specifieke eigenschappen (zoals chroma shift, hue shift, ...) voor. Deze methode probeert niet \"e\"en specifieke waarde te geven die de lichtbron evalueert, maar biedt de gebruiker de benodigde kennis om een keuze te maken op basis van zijn of haar ervaring.
+
+De methode maakt gebruik van 99 \gls{ces}, die op statistische wijze werden gekozen uit 100.000 mogelijke \gls{ces}. Om de kleur voor te stellen, maakt de methode gebruik van een groot aantal berekeningen (50). Afhankelijk van de situatie kunnen bepaalde van deze berekeningen worden gebruikt om een keuze te maken. De belangrijkste berekeningen zijn:
+
+\begin{itemize}
+    \item Fidelity index ($R_f$)
+    \item Gamut index ($R_g$)
+    \item Color Vector Graphic (CVG)
+    \item Local chroma shift
+    \item Local hue shift
+\end{itemize}
+
+
+\subsection{Fidelity index}
+
+De fidelity index is een waarde die aangeeft hoe goed een lichtbron de kleuren van een referentiebron kan weergeven.
+
+De fidelity index van tm30 wordt berekend door de ''CAM02-UCS'' co\"ordinaten van elke \gls{ces} onder de testbron en de referentiebron te berekenen. Vervolgens wordt het rekenkundig gemiddlede genomen, geschaald met een factor 6.73 en afgetrokken van 100.
+
+\begin{align}
+    R_f' = 100 - 6.73 \left[ \sum_{i=1}^{9_{19}} 99 \left( \Delta E_{\text{Jab},i} \right) \right]
+\end{align}
+
+Met $\Delta E_{\text{Jab},i}$ de euclidische afstand tussen de ''CAM02-UCS'' co\"ordinaten van de testbron en de referentiebron voor de $i$-de \gls{ces}.
+
+Vervolgens wordt nog een aanpassing van de schaal gedaan zodat geen negatieve waarden bekomen worden.
+
+\begin{align}
+    R_f = 10 \ln \left[ \exp \left( \frac{R_f'}{10} \right) + 1 \right]
+\end{align}
+
+\subsection{Hue-angle bins}
+
+Voor het berekenen van de volgende waarden worden de \gls{ces} in 16 hue-angle bins verdeeld. Deze bins worden dan gebruikt om de volgende waarden te berekenen. De bins worden bepaald door de a'-b' co\"ordinaten van de \gls{ces} in 16 stukken te verdelen volgens een radiaal patroon zoals in \cref{fig:huebins}. Het a'-b' co\"ordinatenstelsel is een kleurruimte die de kleur van een lichtbron voorstelt. De a'-as staat voor de rood-groen as en de b'-as voor de geel-blauw as.
+
+% figure of bins
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.6\linewidth]{TM-30-Bins.jpg}
+    \caption{Hue-angle bins}%
+    \label{fig:huebins}
+\end{figure}
+
+\subsection{Gamut (area) index}
+
+De gamut (area) index is een waarde die het gebied aangeeft dat wordt beslagen door de gemiddelde (a', b') co\"ordinaten van de \gls{ces} in elke hue-angle bin. Voor de berekening wordt gewerkt met veelhoeken voor de test- en referentiebron. De gamut index wordt berekend aan de hand van \cref{eq:gamut} met $A_{\text{test}}$ en $A_{\text{ref}}$ als de oppervlakten van de veelhoeken van respectievelijk de test- en referentiebron zoals in \cref{fig:gamut}. ~\cite{david2018,simsWhatGamutArea2022}
+
+\begin{align}
+    100 \times \frac{A_{\text{test}}}{A_{\text{ref}}} \label{eq:gamut}
+\end{align}
+
+Hiervoor wordt ten eerste voor alle samples het co\"ordinaat van de test en referentiebron berekend zoals in \cref{fig:gamut_samples} voor de testbron te zien is. Vervolgens wordt per bin het gemiddelde van alle test- en referentieco\"ordinaten genomen. Dit levert een veelhoek op voor de test en de referentiebron zoals te zien voor de testbron in \cref{fig:gamut_combined}. Deze veelhoeken worden dan gebruikt om de oppervlakten te berekenen. Aan de hand hiervan kan dan met \cref{eq:gamut} de gamut (area) index berekend worden (\cref{fig:gamut}).
+
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}[b]{0.45\linewidth}
+        \centering
+        \includegraphics[width=\linewidth]{gamut_samples.png}
+        \caption{Test Gamut samples en oppervlak}%
+        \label{fig:gamut_samples}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[b]{0.45\linewidth}
+        \centering
+        \includegraphics[width=\linewidth]{gamut_index.png}
+        \caption{Gamut area index $A_{\text{test}}$ en $A_{\text{ref}}$ (cirkel)}%
+        \label{fig:gamut}
+    \end{subfigure}
+    \caption{Gamut samples (links) en gamut area index (rechts)}%
+    \label{fig:gamut_combined}
+\end{figure}
+
+\subsection{Color vector graphic}
+
+Een Color Vector Graphic (CVG) laat zien hoe een lichtbron kleuren be\"invloedt. De grafiek toont verschuivingen in kleurintensiteit (chroma) en kleurtint (hue) in een cirkelvormige weergave.
+
+\subsubsection{Chroma (kleurintensiteit)}
+\begin{itemize}
+    \item Als de lijn van de testlichtbron buiten de referentielijn ligt, worden de kleuren intenser (meer verzadigd).
+    \item Ligt de lijn binnen de referentielijn, dan worden de kleuren minder intens (meer dof).
+\end{itemize}
+
+\subsubsection*{Hue (kleurtint)}
+\begin{itemize}
+    \item Als een kleur verschuift langs de cirkel (zonder naar binnen of buiten te gaan), betekent dit dat de tint verandert.
+    \item Bijvoorbeeld: een rode tint kan meer oranje worden of juist meer roze.
+\end{itemize}
+
+\subsection{Local chroma shift}
+
+De local chroma shift beschrijft hoe de kleurverzadiging lokaal verandert.
+
+\begin{itemize}
+    \item Een positieve waarde betekent dat de kleurverzadiging toeneemt (levendiger).
+    \item Een negatieve waarde betekent dat de kleurverzadiging afneemt (doffer).
+    \item Dit wordt berekend door de gemiddelde chroma van de testlichtbron te vergelijken met de gemiddelde chroma van de referentielichtbron in elk van de 16 hue-angle bins en wordt voorgesteld als een percentage.
+\end{itemize}
+
+\subsection{Local hue shift}
+
+De local hue shift beschrijft hoe de kleurtint lokaal verandert.
+
+\begin{itemize}
+    \item Een positieve waarde betekent dat de kleurtint verschuift naar een andere kleur tegen de klok in.
+    \item Een negatieve waarde betekent dat de kleurtint verschuift naar een andere kleur met de klok mee.
+    \item Dit wordt berekend door te kijken naar de tangenti\"ele verplaatsing van de kleuren binnen elk van de 16 hue-angle bins.
+\end{itemize}
+
+\section{Luminescente materialen}
+
+Het maken van wit licht vergt zeven kleuren (violet, blauw, groen, geel, oranje, rood en paars). Dit zou dus betekenen dat om wit licht met \gls{led}s te maken er zeven \gls{led}s moeten gebruikt worden.
+
+Er kan echter ook gebruik gemaakt worden van ''Additive color mixing'' om de perceptie van wit licht te cre\"eren. Dit kan gedaan worden door rood, groen en blauw te mengen. Omdat het menselijk oog trichomatric is levert dit een wit licht op. Het grote probleem met het gebruiken van deze ''mixing'' technieken is dat er meerdere \gls{led}s nodig zijn. Dit zorgt voor een grotere kost, het probleem ligt zich hier vooral bij de groene \gls{led} en de eerder vermelde ''green gap''(\cref{sec:external-quantum-efficiency}).
+
+Om dit probleem op te lossen kan gewerkt worden met luminescente materialen zoals fosforen. Hierbij kan een wit licht bekomen worden met slechts \'e\'en \gls{led}. Dit bijvoorbeeld met een blauwe \gls{led} en een gele fosfor.
+
+\subsection{Werking luminescente materialen}
+
+In de meeste materialen wordt geabsorbeerd licht omgezet naar warmte. Bij luminescente materialen wordt een deel van dit licht echter ook omgezet naar licht met een hogere golflengte. In luminescente materialen resulteert de moleculaire structuur in energiebanden met elektronen. Hierbij is er een ''valence'' band waar de elektronen in een stabiele toestand zijn en een ''conduction'' band waar de elektronen vrij kunnen bewegen zoals te zien in \cref{fig:energybands}. De kloof tussen deze twee banden wordt bepaald door de configuratie van de atomen in het materiaal en kan door het toevoegen van onzuiverheden gemanipuleerd worden.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.6\linewidth]{figs/energy_bands.png}
+    \caption{Energiebanden ~\cite{PhosphorModelingLightTools}}%
+    \label{fig:energybands}
+\end{figure}
+
+Wanneer een luminescent materiaal belicht wordt zullen fotonen van het licht geabsorbeerd worden. Als de energie van de fotonen gelijk is aan het energieverschil tussen de twee banden zal een elektron van de ''valence'' naar de ''conduction'' band springen. De energie van een foton wordt bepaald door de volgende formule:
+
+\begin{align}
+E = \frac{hc}{\lambda}\label{eq:energy-foton}
+\end{align}
+waarbij:
+\begin{align*}
+h & = \text{Planck's constante} \\
+c & = \text{de snelheid van het licht} \\
+\lambda & = \text{de golflengte van het licht}
+\end{align*}
+
+
+Na een tijd zal deze elektron terug naar de ''valence'' band vallen. Dit gaat gepaart met het uitgeven van energie in de vorm van licht. In de realiteit zijn er naast deze twee banden nog andere subtoestanden die het toelaten dat een elektron kan verspringen met een lagere hoeveelheid energie. Dit bepaalt het absorptie spectrum van het materiaal.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.6\linewidth]{figs/photolum_process.png}
+    \caption{Proces luminescente materialen ~\cite{PhosphorModelingLightTools}}%
+    \label{fig:photoluminescent_proc}
+\end{figure}
+
+\subsection{Witte LEDs}\label{sec:witte-leds}
+
+Om wit licht te bekomen moeten alle drie de cones in de retina van het oog geactiveerd zijn met een gelijkaardige intensiteit. Dit komt daarnaast overeen met een centrale positie in het chromaticiteitsdiagram. Wit licht kan op een aantal verschillende manieren gegenereerd worden. Zoals eerder vermeld kan dit door kleuren te mengen. Dit kan dichromatic, trichromatic en tetrachromatic (2, 3 of 4 \gls{led}s). Op deze manieren kan een wit licht gegeneerd worden met een hoge \gls{cri} waarde. Er zijn echter veel toepassingen waar de \gls{cri} waarde niet de grootste prioriteit is.
+
+In vele toepassingen is namelijk de efficientie van de lichtbron belangrijker. Om efficient een witte lichtbron te maken met \gls{led}s wordt gebruik gemaakt van luminescente materialen. Aan de hand van deze materialen wordt het licht van een \gls{led} met een bepaalde centrale golflengte omgezet naar licht gecentreerd rond een andere golflengte. Omdat niet al het licht geconverteerd wordt kan zo een witte lichtbron bekomen worden door bijvoorbeeld blauw licht om te zetten naar geel licht.
+
+Naast het feit dat niet al het licht van de \gls{led} geabsorbeerd wordt zijn er ook nog verliezenn bij de omzetting van het licht. Er zijn ten eerste verliezen door de \gls{eqe} van het converterende materiaal.
+
+\begin{align}
+\eta_{\text{ext}} = \dfrac{\text{aantal fotonen uitgezonden in vrije ruimte door }\lambda\text{-converter per seconde}}{\text{aantal fotonen geabsorbeerd door }\lambda\text{-converter per seconde}}
+\end{align}
+
+Ten tweede treden er ook verliezen op door de conversie naar een hogere golflengte. Dit verschijnsel wordt ook wel de stokes shift genoemd en treed op bij het converteren van een foton met een bepaalde golflengte naar een foton met een hogere golflengte. Deze verliezen trden op omdat de energie van een foton omgekeerd evenredig is met de golflengte (\cref{eq:energy-foton}). Dit betekent dat een foton met een hogere golflengte minder energie heeft dan een foton met een lagere golflengte. Dit verschil in energie wordt omgezet in warmte.
+
+\begin{align}
+\Delta E = \frac{hc}{\lambda_1} - \frac{hc}{\lambda_2}
+\end{align}
+
+\subsection{Verschillen tussen luminescente materialen}
+
+De verschillende luminescente materialen verschillen van elkaar in absorptie golflengtes, emissie golflengtes, eficientie, excitatie- en emissiespectra. Deze excitatie- en emissiespectra tonen aan hoeveel een luminescent materiaal elektronen naar een hoger niveau brengt en licht emiteerd bij elke golflengte. Het is dan ook logisch dat in bepaalde toepassingen een smal emissiespectrum handiger kan zijn dan een breed emissiespectrum.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.9\linewidth]{spectraviewer.png}
+    \caption{Emissiespectra (rhodamine 110) ~\cite{FluorescenceSpectraViewer}}%
+    \label{fig:rhodamine}
+\end{figure}
+
+
+
+
